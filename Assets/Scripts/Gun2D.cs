@@ -7,13 +7,25 @@ public class Gun2D : MonoBehaviour
     public Transform bulletSpawnPoint;
     public GameObject FizzyRocketPrefab;
     public float bulletSpeed = 10;
+    private PlayerMovement player;
+
+    void Start() {
+        player = GetComponent<PlayerMovement>();
+
+    }
  
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.F))
         {
-            var bullet = Instantiate(FizzyRocketPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-            bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
+            string selectedWeapon = "FizzyRocket";
+            GameObject selectedPrefab = FizzyRocketPrefab;
+            // make sure selectedWeapon is available in gadgets
+            Dictionary<string, int> available_gadgets = player.getGadgets();
+            if (available_gadgets.ContainsKey(selectedWeapon) && available_gadgets[selectedWeapon] > 0) {
+                var bullet = Instantiate(selectedPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+                bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
+            }
         }
     }
 }

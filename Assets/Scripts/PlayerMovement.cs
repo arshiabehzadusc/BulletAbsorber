@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour {
     public Signal playerHealthSignal;
 
     private Dictionary<string, int> objectCounts = new Dictionary<string, int>();
-
+    private Dictionary<string, int> gadgets = new Dictionary<string, int>();
 
 	// Use this for initialization
 	void Start () {
@@ -139,6 +139,14 @@ public class PlayerMovement : MonoBehaviour {
             GUILayout.Label(string.Format("{0}: {1}", pair.Key, pair.Value));
         }
         GUILayout.EndArea();
+    }
+
+    public Dictionary<string, int> getInventory() {
+        return objectCounts;
+    }
+
+    public Dictionary<string, int> getGadgets() {
+        return gadgets;
     }
 
 
