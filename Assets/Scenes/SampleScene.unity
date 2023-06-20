@@ -41388,7 +41388,7 @@ PrefabInstance:
     - target: {fileID: 395058613220392790, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
       propertyPath: m_Name
-      value: Candy (1)
+      value: Candy
       objectReference: {fileID: 0}
     - target: {fileID: 4358010127346538355, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
@@ -43156,7 +43156,7 @@ PrefabInstance:
     - target: {fileID: 395058613220392790, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
       propertyPath: m_Name
-      value: Candy (4)
+      value: Candy
       objectReference: {fileID: 0}
     - target: {fileID: 4358010127346538355, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
@@ -43559,7 +43559,7 @@ PrefabInstance:
     - target: {fileID: 395058613220392790, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
       propertyPath: m_Name
-      value: Candy (6)
+      value: Candy
       objectReference: {fileID: 0}
     - target: {fileID: 4358010127346538355, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
@@ -43686,7 +43686,7 @@ PrefabInstance:
     - target: {fileID: 395058613220392790, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
       propertyPath: m_Name
-      value: Candy (5)
+      value: Candy
       objectReference: {fileID: 0}
     - target: {fileID: 4358010127346538355, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
@@ -56338,7 +56338,7 @@ PrefabInstance:
     - target: {fileID: 395058613220392790, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
       propertyPath: m_Name
-      value: Candy (2)
+      value: Candy
       objectReference: {fileID: 0}
     - target: {fileID: 4358010127346538355, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
@@ -56665,7 +56665,7 @@ PrefabInstance:
     - target: {fileID: 395058613220392790, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
       propertyPath: m_Name
-      value: Candy (3)
+      value: Candy
       objectReference: {fileID: 0}
     - target: {fileID: 4358010127346538355, guid: 6a406e1d43e577648b9524e0e408253a,
         type: 3}
@@ -57154,7 +57154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  speed: 25
+  speed: 100
   currentHealth: {fileID: 11400000, guid: d2056c37fff324b6cb19ce1eff22f208, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: bced594b110fa4728b35d89a74a89552, type: 2}
 --- !u!61 &2036204154

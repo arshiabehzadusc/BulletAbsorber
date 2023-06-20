@@ -111,6 +111,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         GameObject hitObject = collision.gameObject;
 
+        // add to inventory
         if (hitObject.CompareTag("Collectable"))
         {
             // Increase the count of this type of object
