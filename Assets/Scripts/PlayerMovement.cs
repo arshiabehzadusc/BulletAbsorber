@@ -136,7 +136,7 @@ public class PlayerMovement : MonoBehaviour {
     void OnGUI()
     {
         // Display the counts of all collected objects
-        GUILayout.BeginArea(new Rect(10, 10, 200, 200));
+        GUILayout.BeginArea(new Rect(500, 10, 700, 200));
         foreach (var pair in objectCounts)
         {
             GUILayout.Label(string.Format("{0}: {1}", pair.Key, pair.Value));
