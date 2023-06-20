@@ -73,6 +73,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 98e03bc4f26fa3148b9d28feb11f9abc, type: 3}
   - {fileID: 21300000, guid: b887b1352fe75664eb60a6260ae07c5b, type: 3}
   - {fileID: 21300000, guid: a34312469092b494bb0df5dd3120f33c, type: 3}
+  - {fileID: 21300000, guid: 50259118d8c51b94097148e8c4f91bb7, type: 3}
   - {fileID: 21300000, guid: 427953b83fbc3c446b9095fa92de0189, type: 3}
   - {fileID: 21300000, guid: 56d3e4f84a854cb4790cef3329cf6b45, type: 3}
   - {fileID: 21301654, guid: 275c0a091801c4f3cbf7d43ef7702e68, type: 3}
@@ -1371,6 +1372,7 @@ SpriteAtlas:
   - {fileID: 21300146, guid: a9f4791a3e68b423c932d4299d8340a4, type: 3}
   - {fileID: 21300140, guid: a9f4791a3e68b423c932d4299d8340a4, type: 3}
   - {fileID: 21300142, guid: a9f4791a3e68b423c932d4299d8340a4, type: 3}
+  - {fileID: 21300000, guid: a45c0b7abcf489f409c23c72af782eb6, type: 3}
   - {fileID: 21300000, guid: b5056c7a782253f478a0403f2a7964a3, type: 3}
   - {fileID: 21300000, guid: d60d67bbb695f0f4abc1f21de49e424b, type: 3}
   - {fileID: 1550620791, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
@@ -1412,6 +1414,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5f1b54fcffa1ea84c84fb40f2c67d78f, type: 3}
   - {fileID: 21300000, guid: 0807b21d17e3a4806be0ab8aec39b4b5, type: 3}
   - {fileID: 21300000, guid: 62a7d27f223856447a3cd420861f2890, type: 3}
+  - {fileID: 21300000, guid: c8385ecf5727f6b4bb6c332c1a0329c8, type: 3}
   m_PackedSpriteNamesToIndex:
   - Gumball Machine
   - Soda
@@ -1436,6 +1439,7 @@ SpriteAtlas:
   - BickerBug
   - Candy
   - Candy Tree
+  - YodaMsg3
   - Fizzy Rocket
   - Gun
   - Overworld_827
@@ -2734,6 +2738,7 @@ SpriteAtlas:
   - character_73
   - character_70
   - character_71
+  - YodaMsg1
   - Spongebob
   - Empty bottle
   - sleep
@@ -2775,6 +2780,7 @@ SpriteAtlas:
   - Princess Bubblegum
   - font
   - Yoda
+  - YodaMsg2
   m_RenderDataMap: {}
   m_Tag: sprite_atlas
   m_IsVariant: 0
