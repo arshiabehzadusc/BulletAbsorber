@@ -8,6 +8,8 @@ TagManager:
   - enemy
   - Collectable
   - FizzyRocketEnemies
+  - Yoda
+  - Spongebob
   layers:
   - Default
   - TransparentFX
