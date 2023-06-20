@@ -22,9 +22,15 @@ public class Gun2D : MonoBehaviour
             GameObject selectedPrefab = FizzyRocketPrefab;
             // make sure selectedWeapon is available in gadgets
             Dictionary<string, int> available_gadgets = player.getGadgets();
-            if (available_gadgets.ContainsKey(selectedWeapon) && available_gadgets[selectedWeapon] > 0) {
-                var bullet = Instantiate(selectedPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-                bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
+            if (available_gadgets.ContainsKey(selectedWeapon)) { 
+                int num_available = available_gadgets[selectedWeapon];
+                if (num_available > 0) {
+                    // remove one ammo
+                    player.setGadgetItem(selectedWeapon, num_available - 1);
+                    // shoot ammo
+                    var bullet = Instantiate(selectedPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+                    bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
+                }
             }
         }
     }

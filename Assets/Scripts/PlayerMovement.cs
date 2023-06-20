@@ -32,6 +32,9 @@ public class PlayerMovement : MonoBehaviour {
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
 
+        //TODO remove
+        gadgets["FizzyRocket"] = 3;
+
 	}
 	
 	// Update is called once per frame
@@ -139,6 +142,14 @@ public class PlayerMovement : MonoBehaviour {
             GUILayout.Label(string.Format("{0}: {1}", pair.Key, pair.Value));
         }
         GUILayout.EndArea();
+
+        // Display the counts of all gadgets
+        GUILayout.BeginArea(new Rect(300, 10, 500, 200));
+        foreach (var pair in gadgets)
+        {
+            GUILayout.Label(string.Format("{0}: {1}", pair.Key, pair.Value));
+        }
+        GUILayout.EndArea();
     }
 
     public Dictionary<string, int> getInventory() {
@@ -147,6 +158,20 @@ public class PlayerMovement : MonoBehaviour {
 
     public Dictionary<string, int> getGadgets() {
         return gadgets;
+    }
+
+    public void setInventoryItem(string item, int new_num) {
+        objectCounts[item] = new_num;
+        if (objectCounts[item] == 0) {
+            objectCounts.Remove(item);
+        }
+    }
+
+    public void setGadgetItem(string item, int new_num) {
+        gadgets[item] = new_num;
+        if (gadgets[item] == 0) {
+            gadgets.Remove(item);
+        }
     }
 
 
