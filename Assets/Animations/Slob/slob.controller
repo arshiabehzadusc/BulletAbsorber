@@ -63,25 +63,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: moveX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: moveY
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: wakeUp
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -120,12 +114,12 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   m_BlendParameter: moveX
-  m_BlendParameterY: moveY
+  m_BlendParameterY: 
   m_MinThreshold: 0.33333334
   m_MaxThreshold: 0.6666667
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
-  m_BlendType: 1
+  m_BlendType: 0
 --- !u!1102 &380074838191706320
 AnimatorState:
   serializedVersion: 6
