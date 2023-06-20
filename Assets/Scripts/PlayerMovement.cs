@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour {
     private Dictionary<string, int> objectCounts = new Dictionary<string, int>();
     private Dictionary<string, int> gadgets = new Dictionary<string, int>();
 
+   
 	// Use this for initialization
 	void Start () {
         currentState = PlayerState.walk;
@@ -50,6 +51,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             UpdateAnimationAndMove();
         }
+
 	}
 
     private IEnumerator AttackCo()
@@ -173,6 +175,6 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 
-
+   
 
 }
