@@ -23,7 +23,8 @@ public class PlayerMovement : MonoBehaviour {
 
     private Dictionary<string, int> objectCounts = new Dictionary<string, int>();
     private Dictionary<string, int> gadgets = new Dictionary<string, int>();
-
+    
+    private int[] facing_direction = new int[2] {-1, 0};
    
 	// Use this for initialization
 	void Start () {
@@ -33,7 +34,8 @@ public class PlayerMovement : MonoBehaviour {
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
 
-        
+        // TODO remove
+        gadgets["FizzyRocket"] = 10;
 
 	}
 	
@@ -42,6 +44,8 @@ public class PlayerMovement : MonoBehaviour {
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
+        
+        
         if(Input.GetButtonDown("attack") && currentState != PlayerState.attack 
            && currentState != PlayerState.stagger)
         {
@@ -72,6 +76,10 @@ public class PlayerMovement : MonoBehaviour {
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true);
+
+            facing_direction[0] = (int) change.x;
+            facing_direction[1] = (int) change.y;
+
         }
         else
         {
@@ -173,6 +181,10 @@ public class PlayerMovement : MonoBehaviour {
         if (gadgets[item] == 0) {
             gadgets.Remove(item);
         }
+    }
+
+    public int[] getFacingDirection() {
+        return facing_direction;
     }
 
    
