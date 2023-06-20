@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour {
     private Animator animator;
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
+    public GameObject gun;
 
     private Dictionary<string, int> objectCounts = new Dictionary<string, int>();
     private Dictionary<string, int> gadgets = new Dictionary<string, int>();
@@ -45,7 +46,7 @@ public class PlayerMovement : MonoBehaviour {
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
         
-        
+
         if(Input.GetButtonDown("attack") && currentState != PlayerState.attack 
            && currentState != PlayerState.stagger)
         {
@@ -79,6 +80,21 @@ public class PlayerMovement : MonoBehaviour {
 
             facing_direction[0] = (int) change.x;
             facing_direction[1] = (int) change.y;
+
+            // aim gun sprite
+            if (change.x == -1) {
+                gun.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            }
+            else if (change.x == 1) {
+                gun.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            }
+            if (change.y == -1) {
+                gun.transform.rotation = Quaternion.Euler(0f, 0f, -90f);
+            }
+            if (change.y == 1) {
+                gun.transform.rotation = Quaternion.Euler(0f, 0f, 90f);
+            }
+            gun.transform.position = transform.position + new Vector3((float) change.x, (float) change.y * 1.3f, 0f);
 
         }
         else
