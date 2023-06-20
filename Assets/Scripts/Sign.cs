@@ -17,8 +17,9 @@ public class Sign : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(Input.GetKeyDown(KeyCode.Space) && playerInRange)
-        {
+        if(Input.GetKeyDown(KeyCode.R) && playerInRange)
+        {   
+            dialogBox.SetActive(false);
             if(dialogBox.activeInHierarchy)
             {
                 dialogBox.SetActive(false);
@@ -26,6 +27,7 @@ public class Sign : MonoBehaviour {
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
             }
+            
         }
 	}
 
