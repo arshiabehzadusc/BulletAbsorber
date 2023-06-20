@@ -32,8 +32,7 @@ public class PlayerMovement : MonoBehaviour {
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
 
-        //TODO remove
-        gadgets["FizzyRocket"] = 3;
+        
 
 	}
 	

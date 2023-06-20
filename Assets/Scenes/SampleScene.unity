@@ -56438,6 +56438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad2d239dcb7a1a242bcec85c885ef5c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2036204153}
   openCraftMenu: {fileID: 1724794857}
   fizzyrocket: {fileID: 71263921}
   weapon2: {fileID: 1830262066}
