@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1200 height=800></canvas>
+      <canvas id="unity-canvas" width=1200 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/prototype1build-actualFINAL.loader.js";
+      var loaderUrl = buildUrl + "/prototype1build-actualFINAL2.loader.js";
       var config = {
-        dataUrl: buildUrl + "/prototype1build-actualFINAL.data",
-        frameworkUrl: buildUrl + "/prototype1build-actualFINAL.framework.js",
-        codeUrl: buildUrl + "/prototype1build-actualFINAL.wasm",
+        dataUrl: buildUrl + "/prototype1build-actualFINAL2.data",
+        frameworkUrl: buildUrl + "/prototype1build-actualFINAL2.framework.js",
+        codeUrl: buildUrl + "/prototype1build-actualFINAL2.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Oddities Game",
@@ -94,7 +94,7 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "1200px";
-        canvas.style.height = "800px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
