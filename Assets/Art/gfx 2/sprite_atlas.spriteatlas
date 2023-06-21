@@ -1375,6 +1375,18 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a45c0b7abcf489f409c23c72af782eb6, type: 3}
   - {fileID: 21300000, guid: b5056c7a782253f478a0403f2a7964a3, type: 3}
   - {fileID: 21300000, guid: d60d67bbb695f0f4abc1f21de49e424b, type: 3}
+  - {fileID: 1550620791, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
+  - {fileID: -159606195, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
+  - {fileID: 1924271954, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
+  - {fileID: -118148793, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
+  - {fileID: -1759509956, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
+  - {fileID: -193524753, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
+  - {fileID: -315814448, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
+  - {fileID: -1517017775, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
+  - {fileID: 414971512, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
+  - {fileID: -1518759666, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
+  - {fileID: -463544064, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
+  - {fileID: 1937613525, guid: 1eac4cbbdcc0f4cf8a8a844cd2604e5d, type: 3}
   - {fileID: 21300016, guid: 9df678dbec5f64ddd8011fc2e4fb1003, type: 3}
   - {fileID: 21300018, guid: 9df678dbec5f64ddd8011fc2e4fb1003, type: 3}
   - {fileID: 21300004, guid: 9df678dbec5f64ddd8011fc2e4fb1003, type: 3}
@@ -2729,6 +2741,18 @@ SpriteAtlas:
   - YodaMsg1
   - Spongebob
   - Empty bottle
+  - sleep
+  - sit
+  - teeth
+  - teethclosed
+  - up2
+  - sit 2
+  - left1
+  - left2
+  - right1
+  - right2
+  - up
+  - lazy
   - log_8
   - log_9
   - log_2
