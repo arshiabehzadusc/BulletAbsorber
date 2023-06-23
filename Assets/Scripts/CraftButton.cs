@@ -10,7 +10,7 @@ public class CraftButton : MonoBehaviour
 
     public Button openCraftMenu;
     public Button fizzyrocket;
-    public Button weapon2;
+    public Button gumgumgun;
     public Button weapon3;
 
     // Start is called before the first frame update
@@ -21,13 +21,13 @@ public class CraftButton : MonoBehaviour
         DisableButtons();
 
         fizzyrocket.onClick.AddListener(createFizzyRocket);
-        weapon2.onClick.AddListener(createWeapon2);
+        gumgumgun.onClick.AddListener(createGumGumGun);
         weapon3.onClick.AddListener(createWeapon3);
     }
 
     private void EnableButtons() {
         fizzyrocket.gameObject.SetActive(true);
-        weapon2.gameObject.SetActive(true);
+        gumgumgun.gameObject.SetActive(true);
         weapon3.gameObject.SetActive(true);
 
         openCraftMenu.onClick.RemoveListener(EnableButtons);
@@ -39,7 +39,7 @@ public class CraftButton : MonoBehaviour
         openCraftMenu.onClick.AddListener(EnableButtons);
 
         fizzyrocket.gameObject.SetActive(false);
-        weapon2.gameObject.SetActive(false);
+        gumgumgun.gameObject.SetActive(false);
         weapon3.gameObject.SetActive(false);
     }
 
@@ -81,7 +81,7 @@ public class CraftButton : MonoBehaviour
 
     
 
-    private void createWeapon2() {
+    private void createGumGumGun() {
 
     }
     private void createWeapon3() {

@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour {
 
         // TODO remove
         gadgets["FizzyRocket"] = 10;
+        gadgets["GumGumGun"] = 1;
 
 	}
 	
