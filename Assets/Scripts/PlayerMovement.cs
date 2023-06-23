@@ -172,7 +172,11 @@ public class PlayerMovement : MonoBehaviour {
         GUILayout.BeginArea(new Rect(300, 10, 500, 200));
         foreach (var pair in gadgets)
         {
-            GUILayout.Label(string.Format("{0}: {1}", pair.Key, pair.Value));
+            GUIStyle customStyle = new GUIStyle(GUI.skin.label);
+            int fontSize = 40;
+            customStyle.fontSize = fontSize;
+            string msg = string.Format("{0}: {1}", pair.Key, pair.Value);
+            GUILayout.Label(string.Format(msg), customStyle);
         }
         GUILayout.EndArea();
     }
